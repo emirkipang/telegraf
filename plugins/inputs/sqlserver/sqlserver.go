@@ -365,9 +365,9 @@ OPTION( RECOMPILE );
 `
 
 const sqlServerPropertiesV2 = `DECLARE @sys_info TABLE (
-	cpu_count INT,
-	server_memory INT,
-	uptime INT
+	cpu_count BIGINT,
+	server_memory BIGINT,
+	uptime BIGINT
 )
 
 IF OBJECT_ID('master.sys.dm_os_sys_info') IS NOT NULL
